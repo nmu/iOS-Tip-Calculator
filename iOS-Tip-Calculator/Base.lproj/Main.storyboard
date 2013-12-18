@@ -41,23 +41,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yy-Ca-l22">
+                                <rect key="frame" x="20" y="250" width="280" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="20%" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-ea-owk">
                                 <rect key="frame" x="20" y="187" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTC-Ga-6YN">
+                                <rect key="frame" x="20" y="262" width="280" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2yy-Ca-l22" secondAttribute="trailing" constant="20" id="5k3-Xy-L8t"/>
                             <constraint firstAttribute="trailing" secondItem="arx-Af-Y9E" secondAttribute="trailing" constant="20" id="7lA-AH-fFY"/>
+                            <constraint firstItem="2yy-Ca-l22" firstAttribute="top" secondItem="Efx-ea-owk" secondAttribute="bottom" constant="33" id="7s4-ao-ufz"/>
+                            <constraint firstItem="xTC-Ga-6YN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Bhl-t7-svB"/>
+                            <constraint firstItem="2yy-Ca-l22" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="CDQ-56-ApH"/>
                             <constraint firstItem="arx-Af-Y9E" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="92" id="DvB-Sb-BeM"/>
+                            <constraint firstAttribute="trailing" secondItem="xTC-Ga-6YN" secondAttribute="trailing" constant="20" id="R8V-eV-Yov"/>
                             <constraint firstItem="moG-h6-cqm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="V0J-lp-7NN"/>
                             <constraint firstAttribute="trailing" secondItem="moG-h6-cqm" secondAttribute="trailing" constant="20" id="YVS-Kc-HVc"/>
                             <constraint firstItem="mNA-xJ-ssu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="cAf-5Q-KXv"/>
                             <constraint firstAttribute="trailing" secondItem="Efx-ea-owk" secondAttribute="trailing" constant="20" id="hhv-qy-oXE"/>
                             <constraint firstItem="Efx-ea-owk" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="45" id="ho9-hI-o10"/>
                             <constraint firstItem="Efx-ea-owk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="oqb-7C-jfX"/>
+                            <constraint firstItem="xTC-Ga-6YN" firstAttribute="top" secondItem="Efx-ea-owk" secondAttribute="bottom" constant="45" id="pdw-8k-EDq"/>
                             <constraint firstItem="mNA-xJ-ssu" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="23" id="qrF-fY-FUZ"/>
                             <constraint firstAttribute="trailing" secondItem="mNA-xJ-ssu" secondAttribute="trailing" constant="20" id="qwJ-fP-qu3"/>
                             <constraint firstItem="moG-h6-cqm" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="70" id="tG5-Mj-anI"/>
