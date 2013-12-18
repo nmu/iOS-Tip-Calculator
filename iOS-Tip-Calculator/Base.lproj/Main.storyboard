@@ -24,67 +24,103 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moG-h6-cqm">
-                                <rect key="frame" x="20" y="90" width="280" height="17"/>
+                                <rect key="frame" x="20" y="90" width="92" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arx-Af-Y9E">
-                                <rect key="frame" x="20" y="112" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arx-Af-Y9E">
+                                <rect key="frame" x="120" y="87" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="onSubtotalEditDidEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="JpL-WD-H5T"/>
+                                </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNA-xJ-ssu">
-                                <rect key="frame" x="20" y="165" width="280" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNA-xJ-ssu">
+                                <rect key="frame" x="20" y="145" width="92" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dp-Zf-GDs">
+                                <rect key="frame" x="20" y="225" width="92" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gv-hj-v6u">
+                                <rect key="frame" x="112" y="213" width="188" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yy-Ca-l22">
-                                <rect key="frame" x="20" y="250" width="280" height="17"/>
+                                <rect key="frame" x="20" y="292" width="87" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="20%" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-ea-owk">
-                                <rect key="frame" x="20" y="187" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-ea-owk">
+                                <rect key="frame" x="120" y="137" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="onTipPercentEditDidEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="z6t-lQ-hZj"/>
+                                </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTC-Ga-6YN">
-                                <rect key="frame" x="20" y="262" width="280" height="77"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.00" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTC-Ga-6YN">
+                                <rect key="frame" x="120" y="259" width="180" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="2yy-Ca-l22" secondAttribute="trailing" constant="20" id="5k3-Xy-L8t"/>
+                            <constraint firstItem="1dp-Zf-GDs" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="205" id="3fI-pf-fdI"/>
+                            <constraint firstAttribute="trailing" secondItem="2yy-Ca-l22" secondAttribute="trailing" constant="213" id="5k3-Xy-L8t"/>
+                            <constraint firstItem="7gv-hj-v6u" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="112" id="7XZ-gZ-gZ4"/>
                             <constraint firstAttribute="trailing" secondItem="arx-Af-Y9E" secondAttribute="trailing" constant="20" id="7lA-AH-fFY"/>
-                            <constraint firstItem="2yy-Ca-l22" firstAttribute="top" secondItem="Efx-ea-owk" secondAttribute="bottom" constant="33" id="7s4-ao-ufz"/>
-                            <constraint firstItem="xTC-Ga-6YN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Bhl-t7-svB"/>
+                            <constraint firstItem="xTC-Ga-6YN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="Bhl-t7-svB"/>
                             <constraint firstItem="2yy-Ca-l22" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="CDQ-56-ApH"/>
-                            <constraint firstItem="arx-Af-Y9E" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="92" id="DvB-Sb-BeM"/>
+                            <constraint firstItem="arx-Af-Y9E" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="67" id="DvB-Sb-BeM"/>
                             <constraint firstAttribute="trailing" secondItem="xTC-Ga-6YN" secondAttribute="trailing" constant="20" id="R8V-eV-Yov"/>
                             <constraint firstItem="moG-h6-cqm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="V0J-lp-7NN"/>
-                            <constraint firstAttribute="trailing" secondItem="moG-h6-cqm" secondAttribute="trailing" constant="20" id="YVS-Kc-HVc"/>
+                            <constraint firstAttribute="trailing" secondItem="moG-h6-cqm" secondAttribute="trailing" constant="208" id="YVS-Kc-HVc"/>
                             <constraint firstItem="mNA-xJ-ssu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="cAf-5Q-KXv"/>
+                            <constraint firstItem="xTC-Ga-6YN" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="239" id="gT3-vc-evA"/>
                             <constraint firstAttribute="trailing" secondItem="Efx-ea-owk" secondAttribute="trailing" constant="20" id="hhv-qy-oXE"/>
-                            <constraint firstItem="Efx-ea-owk" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="45" id="ho9-hI-o10"/>
-                            <constraint firstItem="Efx-ea-owk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="oqb-7C-jfX"/>
-                            <constraint firstItem="xTC-Ga-6YN" firstAttribute="top" secondItem="Efx-ea-owk" secondAttribute="bottom" constant="45" id="pdw-8k-EDq"/>
-                            <constraint firstItem="mNA-xJ-ssu" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="23" id="qrF-fY-FUZ"/>
-                            <constraint firstAttribute="trailing" secondItem="mNA-xJ-ssu" secondAttribute="trailing" constant="20" id="qwJ-fP-qu3"/>
+                            <constraint firstItem="Efx-ea-owk" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="20" id="ho9-hI-o10"/>
+                            <constraint firstItem="Efx-ea-owk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="oqb-7C-jfX"/>
+                            <constraint firstAttribute="trailing" secondItem="7gv-hj-v6u" secondAttribute="trailing" constant="20" id="pUQ-5K-rt1"/>
+                            <constraint firstItem="7gv-hj-v6u" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="193" id="paU-CK-8cf"/>
+                            <constraint firstItem="mNA-xJ-ssu" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="28" id="qrF-fY-FUZ"/>
+                            <constraint firstAttribute="trailing" secondItem="mNA-xJ-ssu" secondAttribute="trailing" constant="208" id="qwJ-fP-qu3"/>
+                            <constraint firstItem="2yy-Ca-l22" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="272" id="snE-Vu-hwX"/>
                             <constraint firstItem="moG-h6-cqm" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="70" id="tG5-Mj-anI"/>
-                            <constraint firstItem="arx-Af-Y9E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ugq-Ky-ylp"/>
+                            <constraint firstItem="1dp-Zf-GDs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="tZV-fx-J07"/>
+                            <constraint firstAttribute="trailing" secondItem="1dp-Zf-GDs" secondAttribute="trailing" constant="208" id="u0u-CV-Ubg"/>
+                            <constraint firstItem="arx-Af-Y9E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="ugq-Ky-ylp"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ytx-4w-Kbw" appends="YES" id="yPw-4b-6Mj"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="subtotalBill" destination="arx-Af-Y9E" id="wi4-V3-HPI"/>
+                        <outlet property="tipAmount" destination="7gv-hj-v6u" id="mKn-fo-4yN"/>
+                        <outlet property="tipPercent" destination="Efx-ea-owk" id="wkT-Kz-odw"/>
+                        <outlet property="totalBill" destination="xTC-Ga-6YN" id="ZhH-Np-aTW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ytx-4w-Kbw"/>
             </objects>
         </scene>
     </scenes>
