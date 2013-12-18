@@ -46,8 +46,15 @@
                                     <action selector="onSubtotalEditDidEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="JpL-WD-H5T"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNA-xJ-ssu">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNA-xJ-ssu">
                                 <rect key="frame" x="20" y="145" width="92" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-gU-Dzj">
+                                <rect key="frame" x="287" y="145" width="16" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,8 +81,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-ea-owk">
-                                <rect key="frame" x="120" y="137" width="180" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-ea-owk">
+                                <rect key="frame" x="146" y="145" width="140" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -100,22 +107,26 @@
                             <constraint firstAttribute="trailing" secondItem="2yy-Ca-l22" secondAttribute="trailing" constant="213" id="5k3-Xy-L8t"/>
                             <constraint firstItem="7gv-hj-v6u" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="112" id="7XZ-gZ-gZ4"/>
                             <constraint firstAttribute="trailing" secondItem="arx-Af-Y9E" secondAttribute="trailing" constant="20" id="7lA-AH-fFY"/>
+                            <constraint firstItem="mNA-xJ-ssu" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="125" id="A9c-2f-Dsg"/>
+                            <constraint firstItem="Efx-ea-owk" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="125" id="ASu-0d-DXm"/>
+                            <constraint firstItem="QU4-gU-Dzj" firstAttribute="leading" secondItem="Efx-ea-owk" secondAttribute="trailing" constant="1" id="AgS-jK-yzn"/>
                             <constraint firstItem="xTC-Ga-6YN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="Bhl-t7-svB"/>
                             <constraint firstItem="2yy-Ca-l22" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="CDQ-56-ApH"/>
                             <constraint firstItem="arx-Af-Y9E" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="67" id="DvB-Sb-BeM"/>
                             <constraint firstAttribute="trailing" secondItem="xTC-Ga-6YN" secondAttribute="trailing" constant="20" id="R8V-eV-Yov"/>
                             <constraint firstItem="moG-h6-cqm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="V0J-lp-7NN"/>
+                            <constraint firstAttribute="trailing" secondItem="QU4-gU-Dzj" secondAttribute="trailing" constant="17" id="VhU-dQ-raA"/>
                             <constraint firstAttribute="trailing" secondItem="moG-h6-cqm" secondAttribute="trailing" constant="208" id="YVS-Kc-HVc"/>
+                            <constraint firstItem="QU4-gU-Dzj" firstAttribute="leading" secondItem="Efx-ea-owk" secondAttribute="trailing" constant="1" id="aJ8-88-esJ"/>
                             <constraint firstItem="mNA-xJ-ssu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="cAf-5Q-KXv"/>
                             <constraint firstItem="xTC-Ga-6YN" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="239" id="gT3-vc-evA"/>
-                            <constraint firstAttribute="trailing" secondItem="Efx-ea-owk" secondAttribute="trailing" constant="20" id="hhv-qy-oXE"/>
-                            <constraint firstItem="Efx-ea-owk" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="20" id="ho9-hI-o10"/>
-                            <constraint firstItem="Efx-ea-owk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="oqb-7C-jfX"/>
+                            <constraint firstAttribute="trailing" secondItem="Efx-ea-owk" secondAttribute="trailing" constant="34" id="hhv-qy-oXE"/>
+                            <constraint firstItem="Efx-ea-owk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="146" id="oqb-7C-jfX"/>
                             <constraint firstAttribute="trailing" secondItem="7gv-hj-v6u" secondAttribute="trailing" constant="20" id="pUQ-5K-rt1"/>
                             <constraint firstItem="7gv-hj-v6u" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="193" id="paU-CK-8cf"/>
-                            <constraint firstItem="mNA-xJ-ssu" firstAttribute="top" secondItem="arx-Af-Y9E" secondAttribute="bottom" constant="28" id="qrF-fY-FUZ"/>
                             <constraint firstAttribute="trailing" secondItem="mNA-xJ-ssu" secondAttribute="trailing" constant="208" id="qwJ-fP-qu3"/>
                             <constraint firstItem="2yy-Ca-l22" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="272" id="snE-Vu-hwX"/>
+                            <constraint firstItem="QU4-gU-Dzj" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="125" id="snc-UB-OUf"/>
                             <constraint firstItem="moG-h6-cqm" firstAttribute="top" secondItem="Fuj-vs-QXP" secondAttribute="bottom" constant="70" id="tG5-Mj-anI"/>
                             <constraint firstItem="1dp-Zf-GDs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="tZV-fx-J07"/>
                             <constraint firstAttribute="trailing" secondItem="1dp-Zf-GDs" secondAttribute="trailing" constant="208" id="u0u-CV-Ubg"/>
