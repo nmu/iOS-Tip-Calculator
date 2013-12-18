@@ -17,11 +17,11 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+
     _subtotalBill.keyboardType = UIKeyboardTypeDecimalPad;
     _tipPercent.keyboardType = UIKeyboardTypeDecimalPad;
-    
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
