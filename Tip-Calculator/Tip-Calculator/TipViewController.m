@@ -51,12 +51,11 @@
     UIBarButtonItem *settingsItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
     self.navigationItem.rightBarButtonItem = settingsItem;
     
+    [self loadDefaultTipPercent];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [self loadDefaultTipPercent];
 }
 
 - (IBAction)onTap:(id)sender {
@@ -76,7 +75,12 @@
 }
 
 - (void)onSettingsButton {
-    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[SettingsViewController new] animated:YES];
+}
+
+- (void)loadDefaultTipPercent {
+    int tipPercentPreference = [[NSUserDefaults standardUserDefaults] integerForKey:@"tipPercentPreference"];
+    [self.tipPercentControl setSelectedSegmentIndex:tipPercentPreference];
 }
 
 @end

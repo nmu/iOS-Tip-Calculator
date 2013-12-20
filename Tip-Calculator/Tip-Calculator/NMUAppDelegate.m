@@ -11,12 +11,18 @@
 
 @implementation NMUAppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    // Allocate & init TipViewController, assign to var vc
+    // Defaults
+    NSURL *defaultsURL = [[NSBundle mainBundle] URLForResource:@"TipSettings" withExtension:@"plist"];
+    NSDictionary *appDefaults = [NSDictionary dictionaryWithContentsOfURL:defaultsURL];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+    
+    // View Controller & Navigation
     TipViewController *vc = [[TipViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nvc;
@@ -52,5 +58,11 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+//
+//- (int)getDefaultTipPercent:(UIApplication *)application
+//{
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    return [defaults integerForKey:@"tipPercentPreference"];
+//}
 
 @end
