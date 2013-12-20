@@ -7,20 +7,25 @@
 //
 
 #import "TipViewController.h"
+#import "SettingsViewController.h"
 
 @interface TipViewController ()
 
+// Constants
 @property (nonatomic, strong) NSArray *tipPercents;
 
+// UI Elements
 @property (weak, nonatomic) IBOutlet UITextField *subtotalBillTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tipAmountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalBillLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipPercentControl;
 
+// Actions
 - (IBAction)onTap:(id)sender;
 - (IBAction)calculateTip:(id)sender;
 
-
+// Other Methods
+- (void)onSettingsButton;
 @end
 
 @implementation TipViewController
@@ -42,6 +47,9 @@
     // Do any additional setup after loading the view from its nib.
     
     self.subtotalBillTextField.keyboardType = UIKeyboardTypeDecimalPad;
+    
+    UIBarButtonItem *settingsItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
+    self.navigationItem.rightBarButtonItem = settingsItem;
     
 }
 
@@ -65,8 +73,10 @@
     
     self.tipAmountLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.totalBillLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+}
 
-    
+- (void)onSettingsButton {
+    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
 }
 
 @end

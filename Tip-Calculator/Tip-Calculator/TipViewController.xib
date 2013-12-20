@@ -91,10 +91,6 @@
                 <outletCollection property="gestureRecognizers" destination="Bpg-bx-nV8" appends="YES" id="HpT-ng-dTh"/>
             </connections>
         </view>
-        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="w2u-vJ-6hs">
-            <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-        </activityIndicatorView>
         <tapGestureRecognizer id="Bpg-bx-nV8">
             <connections>
                 <action selector="onTap:" destination="-1" id="rUj-SH-pbW"/>
